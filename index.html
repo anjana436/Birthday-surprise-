@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Kathirvel ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#000,#111,#1a1a1a);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+overflow:hidden;
+color:white;
+}
+
+.container{
+width:95%;
+max-width:430px;
+padding:25px;
+text-align:center;
+border-radius:25px;
+background:rgba(0,0,0,.7);
+border:2px solid gold;
+box-shadow:0 0 30px gold;
+animation:fadeIn 2s;
+}
+
+h1{
+color:gold;
+font-size:30px;
+margin-bottom:20px;
+text-shadow:0 0 15px gold;
+}
+
+h2{
+color:#fff;
+margin-top:15px;
+}
+
+button{
+padding:15px 35px;
+border:none;
+border-radius:40px;
+background:gold;
+color:black;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+margin-top:20px;
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px gold;
+}
+
+img{
+width:240px;
+height:240px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid gold;
+margin-top:20px;
+box-shadow:0 0 25px gold;
+}
+
+.hidden{
+display:none;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:scale(.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎁 A Gift For Someone Special ❤️</h1>
+
+<button onclick="openGift()">
+Tap To Open
+</button>
+
+<div id="gift" class="hidden">
+
+<h2>Happy Birthday Kathirvel ❤️</h2>
+
+<img src="photo.jpg">
+
+<p style="margin-top:20px;color:gold;">
+✨ Today is your day ✨
+</p>
+
+<button onclick="showCake()">
+Continue 🎂
+</button>
+
+</div>
+<div id="cake" class="hidden">
+
+<h2>🎂 Make A Birthday Wish 🎂</h2>
+
+<div style="font-size:90px;">🎂</div>
+
+<p style="margin-top:15px;">
+Touch the candle and make a wish ✨
+</p>
+
+<button onclick="blowCandle()">
+🕯 Blow Candle
+</button>
+
+</div>
+
+<div id="message" class="hidden">
+
+<h2 style="color:gold;">🎉 Happy Birthday Kathirvel ❤️</h2>
+
+<p style="margin-top:20px;line-height:2;color:white;">
+
+இன்று உன் பிறந்த நாள்...<br><br>
+
+ஆனால் என் மனதிற்கு,<br>
+இன்று ஒரு புதிய உலகம் பிறந்த நாள்... ❤️<br><br>
+
+உன்னை பார்த்த நாளிலிருந்து,<br>
+என் இதயம் தேர்ந்தெடுத்த ஒரே பெயர்...<br>
+
+<b style="color:gold;">"கதிர்வேல்"</b> ✨
+
+</p>
+
+<button onclick="nextPage()">
+Continue ❤️
+</button>
+
+</div>
+<div id="proposal" class="hidden">
+
+<h2 style="color:gold;">❤️ One Last Surprise ❤️</h2>
+
+<p style="margin-top:20px;line-height:2;font-size:18px;">
+
+இன்று உன் பிறந்த நாள்...<br><br>
+
+என் மனம் சொல்லாமல் வைத்திருந்த<br>
+ஒரு ரகசியமும் இன்று பிறக்கிறது...✨<br><br>
+
+காதல் என்று சொல்லாமல்,<br>
+என் ஒவ்வொரு நாளும்<br>
+உன்னையே தேர்ந்தெடுத்தது...❤️<br><br>
+
+<b style="color:gold;font-size:22px;">
+கதிர்வேல்...<br><br>
+
+என் வாழ்நாள் முழுவதும்<br>
+உன் பக்கத்தில் இருக்க<br>
+ஒரு வாய்ப்பு தருவாயா...? 💍
+</b>
+
+</p>
+
+<audio id="music" controls>
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<script>
+
+function openGift(){
+document.getElementById("gift").style.display="block";
+}
+
+function showCake(){
+document.getElementById("gift").style.display="none";
+document.getElementById("cake").style.display="block";
+}
+
+function blowCandle(){
+alert("🎉 Happy Birthday Kathirvel ❤️");
+document.getElementById("cake").style.display="none";
+document.getElementById("message").style.display="block";
+}
+
+function nextPage(){
+document.getElementById("message").style.display="none";
+document.getElementById("proposal").style.display="block";
+document.getElementById("music").play();
+}
+
+</script>
+
+</div>
+
+</body>
+</html>
